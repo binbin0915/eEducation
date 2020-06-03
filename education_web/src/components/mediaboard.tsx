@@ -195,9 +195,9 @@ const items = [
   {
     name: 'add'
   },
-  {
-    name: 'upload'
-  },
+  // {
+  //   name: 'upload'
+  // },
   {
     name: 'hand_tool'
   }

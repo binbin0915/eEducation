@@ -161,16 +161,16 @@ export default function Control({
         }
         {+role === 1 ?
           <>
-            <Tooltip title={t(roomStore.state.course.isRecording ? 'control_items.stop_recording' : 'control_items.recording')} placement="top">
-              <span>
-                <ControlItem
-                  loading={Boolean(roomStore.state.recordLock)}
-                  name={Boolean(roomStore.state.recordLock) ? 'icon-loading ' : (roomStore.state.course.isRecording ? 'stop_recording' : 'recording')}
-                  onClick={onRecordButtonClick}
-                  active={false}
-                />
-              </span>
-            </Tooltip>
+            {/*<Tooltip title={t(roomStore.state.course.isRecording ? 'control_items.stop_recording' : 'control_items.recording')} placement="top">*/}
+            {/*  <span>*/}
+            {/*    <ControlItem*/}
+            {/*      loading={Boolean(roomStore.state.recordLock)}*/}
+            {/*      name={Boolean(roomStore.state.recordLock) ? 'icon-loading ' : (roomStore.state.course.isRecording ? 'stop_recording' : 'recording')}*/}
+            {/*      onClick={onRecordButtonClick}*/}
+            {/*      active={false}*/}
+            {/*    />*/}
+            {/*  </span>*/}
+            {/*</Tooltip>*/}
             <Tooltip title={t(sharing ? 'control_items.quit_screen_sharing' : 'control_items.screen_sharing')} placement="top">
               <span>
                 <ControlItem

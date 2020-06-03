@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import CustomBrowserRouter from '../containers/custom-browser-router';
 import ThemeContainer from '../containers/theme-container';
 import Home from './home';
+import HomeDefault from './homeDefault';
 import DeviceTest from './device-test';
 import { RoomPage } from './classroom';
 import Loading from '../components/loading';
@@ -62,6 +63,9 @@ export default function () {
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/:roomname/:nickname/:usertype" render={(props) => <HomeDefault {...props} />}>
+            {/*<HomeDefault />*/}
           </Route>
           {/* <Route path="/error">
             <ErrorPage />

@@ -2,11 +2,12 @@ import { globalStore } from './stores/global';
 import {get, isEmpty} from 'lodash';
 import zhCN from './i18n/zh';
 import en from './i18n/en';
+import jpJA from './i18n/jp';
 
 export const BUILD_VERSION = process.env.REACT_APP_BUILD_VERSION as string;
 
 export const t = (name: string, options?: any): string => {
-  const lang = globalStore.state.language.match(/zh/) ? zhCN : en;
+  const lang = globalStore.state.language.match(/zh/) ? zhCN : jpJA;
   let content = get(lang, name, null);
   if (!content) {
     console.error(`${lang}: ${name} has no match`);

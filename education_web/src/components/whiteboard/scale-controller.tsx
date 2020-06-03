@@ -109,10 +109,10 @@ export default class ScaleController extends React.Component<ScaleControllerProp
   public render(): React.ReactNode {
       return (
         <div className="zoom-controls">
-          <Tooltip title={t("zoom_control.folder")} placement="top">
-            <div className="zoom-icon" onClick={() => this.props.onClick()}>
-            </div>
-          </Tooltip>
+          {/*<Tooltip title={t("zoom_control.folder")} placement="top">*/}
+          {/*  <div className="zoom-icon" onClick={() => this.props.onClick()}>*/}
+          {/*  </div>*/}
+          {/*</Tooltip>*/}
           <div className="zoom-hold"></div>
           <div className="zoom-size">{Math.ceil(this.props.zoomScale * 100)} %</div>
           <div className="zoom-items">
